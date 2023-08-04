@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 
+
+
 :root {
   --brand-color: #00b4c3;
   --text-color: #041617;
@@ -8,6 +10,7 @@
   --shadow-color-300: #b9c1c1;
   --shadow-color-400: #747a7b;
 }
+
 
 
 * {
@@ -36,6 +39,25 @@
   background-color: var(--brand-color);
 }
 
+
+
+main, section, nav, footer {
+  display: grid;
+  place-items: center;
+}
+
+
+
+.container {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  max-width: 1310px;
+  padding: 120px 15px;
+}
+
+
+
 a {
   font-size: 16px;
   font-weight: 700;
@@ -45,6 +67,8 @@ a {
 a:hover {
   color: var(--brand-color);
 }
+
+
 
 h1, h2, h3, h4, h5 {
   font-weight: 900;
@@ -76,6 +100,8 @@ p {
   line-height: 1.5;
 }
 
+
+
 button {
   width: 200px;
   height: 50px;
@@ -85,7 +111,7 @@ button {
   font-weight: 700;
   box-shadow: 0 10px 15px 0 var(--shadow-color-200);
   color: white;
-  transition-duration: 0.15s;
+  transition-duration: 0.2s;
   cursor: pointer;
 }
 
@@ -97,10 +123,27 @@ button:active {
   box-shadow: none;
 }
 
+
+
+.second-button {
+  background-color: var(--text-color);
+  border: 3px solid var(--text-color);
+}
+
+.second-button:hover {
+  background-color: var(--shadow-color-100);
+  color: var(--text-color);
+  border: 3px solid var(--text-color);
+}
+
+
+
 label {
   font-size: 17px;
   font-weight: 800;
 }
+
+
 
 select, input {
   height: 50px;
