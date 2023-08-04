@@ -1,0 +1,64 @@
+footer {
+
+  .container {
+    display: grid;
+    place-items: start center;
+    grid-template: 1fr / repeat(4, 1fr);
+    gap: 50px;
+
+    @media (max-width: 1024px) {
+      grid-template: repeat(4, 1fr) / 1fr;
+      gap: 75px;
+    }
+  }
+
+  .content__container {
+    display: grid;
+    gap: 15px;
+
+    @media (max-width: 1024px) {
+      place-items: center;
+    }
+
+    .phone, .email {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      filter: brightness(30%);
+
+      &:hover {
+        filter: brightness(100%);
+      }
+
+      &::before {
+        content: '';
+        width: 20px;
+        height: 20px;    
+      }
+    }
+
+    .phone::before {
+      background: url(../../public/svg/phone.svg) no-repeat center center;
+      background-size: 100%;
+      scale: -1 1;
+    }
+
+    .email::before {
+      background: url(../../public/svg/envelope.svg) no-repeat center center;
+      background-size: 100%;
+    }
+
+    input {
+      background-color: var(--shadow-color-100);
+    }
+
+    button {
+      translate: 0 -10px 0;
+      width: 100%;
+
+      @media (max-width: 1024px) {
+        translate: 0 -5px 0;
+      }
+    }
+  }
+}

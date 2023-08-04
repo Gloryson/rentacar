@@ -51,7 +51,7 @@ main, section, nav, footer {
 .container {
   display: grid;
   place-items: center;
-  width: 100vw;
+  width: 100%;
   max-width: 1310px;
   padding: 120px 15px;
 }
@@ -159,6 +159,10 @@ select, input {
 
 
 @media (max-width: 1024px) {
+  .container {
+    max-width: 500px;
+  }
+
   h1, h2, h3, h4, h5, p {
     text-align: center;
   }

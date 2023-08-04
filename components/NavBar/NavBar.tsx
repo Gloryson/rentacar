@@ -10,7 +10,6 @@ export function NavBar () {
 
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
-
   
   return(
     <nav>
@@ -19,12 +18,12 @@ export function NavBar () {
         <div className='logo'></div>
 
         <div className={`nav-links__container  ${isVisible ? 'visible' : ''}`}>
-          <Link href={'/'}>Home</Link>
-          <Link href={'/'}>About</Link>
-          <Link href={'/'}>Car Models</Link>
-          <Link href={'/'}>Reviews</Link>
-          <Link href={'/'}>Our Team</Link>
-          <Link href={'/'}>Contact</Link>
+          <Link href={'/'} onClick={() => setIsVisible(false)}>Home</Link>
+          <Link href={'/'} onClick={() => setIsVisible(false)}>About</Link>
+          <Link href={'/'} onClick={() => setIsVisible(false)}>Car Models</Link>
+          <Link href={'/'} onClick={() => setIsVisible(false)}>Reviews</Link>
+          <Link href={'/'} onClick={() => setIsVisible(false)}>Our Team</Link>
+          <Link href={'/'} onClick={() => setIsVisible(false)}>Contact</Link>
         </div>
 
         <div className='auth__container'>
