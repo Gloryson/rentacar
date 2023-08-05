@@ -1,0 +1,58 @@
+.book__section {
+  padding: 0 15px 100px;
+
+  .container {
+    gap: 35px;
+    background-color: white;
+    padding: 60px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 var(--shadow-color-300);
+    translate: 0 -25px 0;
+  
+    form {
+      display: grid;
+      grid-template: 1fr 1fr / 1fr 1fr 1fr;
+      gap: 15px;
+      width: 100%;
+  
+      @media (max-width: 1024px) {
+        grid-template: repeat(5, 1fr) / 1fr;
+      }
+  
+      .form__item__container {
+        display: grid;
+        align-items: end;
+        gap: 10px;
+  
+        label {
+          height: 20px;
+          padding-left: 25px;
+
+          b {
+            color: var(--brand-color);
+          }
+        }
+  
+        button {
+          width: 100%;
+        }
+
+        &:nth-child(1) label {
+          background: url(../../public/svg/car.svg) no-repeat left;
+          background-size: 18px;
+        }
+    
+        &:nth-child(1n + 2) label {
+          background: url(../../public/svg/marker.svg) no-repeat left;
+          background-size: 16px;
+        }
+    
+        &:nth-child(1n + 4) label {
+          background: url(../../public/svg/calendar.svg) no-repeat left;
+          background-size: 16px;
+        }
+      }
+    }
+  }
+
+}
