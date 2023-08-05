@@ -1,0 +1,18 @@
+.banner {
+  background-color: var(--text-color);
+
+  .container {
+    
+    h1, h4 {
+      color: white;
+
+      span {
+        color: var(--brand-color);
+      }
+    }
+
+    @media (max-width: 1024px) {
+      gap: 50px;
+    }
+  }
+}

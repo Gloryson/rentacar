@@ -19,6 +19,7 @@ main {
   
   .container {
     grid-template: 1fr / 500px calc(100% - 500px);
+    gap: 0;
   
     @media (max-width: 1024px) {
       grid-template: 1fr / 1fr;

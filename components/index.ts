@@ -1,3 +1,5 @@
+import { Banner } from './Banner/Banner';
+import { BenefitSection } from './BenefitSection/BenefitSection';
 import { BookBanner } from './BookBanner/BookBanner';
 import { BookSection } from './BookSection/BookSection';
 import { FeatureSection } from './FeatureSection/FeatureSection';
@@ -12,6 +14,8 @@ export {
   MainSection,
   BookSection,
   FeatureSection,
+  Banner,
+  BenefitSection,
   BookBanner,
   Footer
 }

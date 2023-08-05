@@ -53,6 +53,7 @@ main, section, nav, footer {
 .container {
   display: grid;
   place-items: center;
+  gap: 15px;
   width: 100%;
   max-width: 1310px;
   padding: 120px 15px;
