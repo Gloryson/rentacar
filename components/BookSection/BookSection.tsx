@@ -8,13 +8,13 @@ export function BookSection () {
       <div className='container'>
         <h4>Book a car</h4>
         <form>
-          <div className='form__item__container'>
+          <div className='form__item'>
             <label>Select car <b>*</b></label>
             <select>
               <option>Select car</option>
             </select>
           </div>
-          <div className='form__item__container'>
+          <div className='form__item'>
             <label>Pick-up <b>*</b></label>
             <select>
               <option>Select pick-up location</option>
@@ -25,7 +25,7 @@ export function BookSection () {
               <option>Copenhagen</option>
             </select>
           </div>
-          <div className='form__item__container'>
+          <div className='form__item'>
             <label>Drop-off <b>*</b></label>
             <select>
               <option>Select drop-off location</option>
@@ -36,15 +36,15 @@ export function BookSection () {
               <option>Copenhagen</option>
             </select>
           </div>
-          <div className='form__item__container'>
+          <div className='form__item'>
             <label>Pick-up <b>*</b></label>
             <input type='date'></input>
           </div>
-          <div className='form__item__container'>
+          <div className='form__item'>
             <label>Drop-off <b>*</b></label>
             <input type='date'></input>
           </div>
-          <div className='form__item__container'>
+          <div className='form__item'>
             <button>Search</button>
           </div>
         </form>

@@ -1,0 +1,48 @@
+.feature__section {
+  
+  .container {
+    gap: 15px;
+
+    .features__container {
+      display: grid;
+      place-items: center;
+      grid-template: 1fr / 1fr 1fr 1fr;
+      width: 100%;
+      padding-top: 80px;
+    
+      @media (max-width: 1024px) {
+        grid-template: 1fr 1fr 1fr / 1fr;
+        gap: 50px;
+      }
+    }
+    
+    .feature {
+      display: grid;
+      place-items: start center;
+      gap: 15px;
+      max-width: 300px;
+      padding-top: 150px;
+      
+      &:nth-child(1) {
+        background: url(../../public/backgrounds/feature-car-background.jpg) no-repeat top;
+        background-size: 125px;
+      }
+    
+      &:nth-child(2) {
+        background: url(../../public/backgrounds/feature-operator-background.jpg) no-repeat top;
+        background-size: 125px;
+      }
+    
+      &:nth-child(3) {
+        background: url(../../public/backgrounds/feature-drive-background.jpg) no-repeat top;
+        background-size: 125px;
+      }
+      
+    
+      p {
+        text-align: center;
+      }
+    }
+
+  }
+}
