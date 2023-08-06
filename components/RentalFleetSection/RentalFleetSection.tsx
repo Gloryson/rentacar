@@ -1,9 +1,17 @@
+'use client'
+
 import Image from 'next/image';
+import { useState } from 'react';
+import { cars } from '@/database/cars';
+import { Car } from '@/types/interfaces';
 import './RentalFleetSection.scss';
 
 
 
 export function RentalFleetSection () {
+
+  const [car, setCar] = useState<Car>(cars[0]);
+
   return(
     <section className='rental__fleet__section'>
       <div className='container'>
@@ -12,30 +20,40 @@ export function RentalFleetSection () {
         <p>Choose from a variety of our amazing vehicles to rent for your next adventure or business trip</p>
         <div className='car__pick__container'>
           <div className='names__container'>
-            <button>Volkswagen</button>
-            <button>Marat</button>
-            <button>Gnu gnu i7</button>
+            {
+              cars.map(curr => {
+                return(
+                  <button
+                    key={curr.id}
+                    className={curr.id === car.id ? 'selected' : ''}
+                    onClick={() => setCar(curr)}
+                  >
+                    {`${curr.mark} ${curr.model}`}
+                  </button>
+                )
+              })
+            }
           </div>
           <div className='image__container'>
-            <Image fill src={'/pictures/tesla-model-x.jpg'} alt='' sizes='100%' priority={false}/>
+            <Image fill src={`/pictures/${car.img}.jpg`} alt='' sizes='100%' priority={false}/>
           </div>
           <div className='properties__container'>
-            <div className='price'>$45 / rent per day</div>
+            <div className='price'>{`$${car.price}`} / rent per day</div>
             <div className='properties'>
               <div>Mark</div>
-              <div>Volswagen</div>
+              <div>{car.mark}</div>
               <div>Model</div>
-              <div>Golf 6</div>
+              <div>{car.model}</div>
               <div>Year</div>
-              <div>2014</div>
+              <div>{car.year}</div>
               <div>Doors</div>
-              <div>4/5</div>
+              <div>{car.doors}</div>
               <div>AC</div>
-              <div>Yes</div>
+              <div>{car.ac}</div>
               <div>Transmission</div>
-              <div>Manual</div>
+              <div>{car.transmission}</div>
               <div>Fuel</div>
-              <div>Gasoline</div>
+              <div>{car.fuel}</div>
             </div>
             <button>RESERVE NOW</button>
           </div>
