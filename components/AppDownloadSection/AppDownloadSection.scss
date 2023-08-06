@@ -1,0 +1,40 @@
+.app__download__section {
+  background-color: var(--shadow-color-100);
+
+  .container {
+    place-items: start;
+    max-width: 1024px;
+    background: url(../../public/backgrounds/app-download-background.jpg) no-repeat right;
+    background-size: contain;
+
+    @media (max-width: 1024px) {
+      place-items: center;
+      background-image: none;
+    }
+
+    h2 {
+      max-width: 500px;
+    }
+  }
+
+  .download__links__container {
+    display: flex;
+    gap: 15px;
+  
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    button:nth-child(1) {
+      background: black url(../../public/pictures/download-app-store-button.jpg) no-repeat center;
+      background-size: contain;
+    }
+  
+    button:nth-child(2) {
+      background: black url(../../public/pictures/download-google-play-button.jpg) no-repeat center;
+      background-size: contain;
+    }
+  }
+
+}

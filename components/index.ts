@@ -1,3 +1,4 @@
+import { AppDownloadSection } from './AppDownloadSection/AppDownloadSection';
 import { Banner } from './Banner/Banner';
 import { BenefitSection } from './BenefitSection/BenefitSection';
 import { BookBanner } from './BookBanner/BookBanner';
@@ -20,5 +21,6 @@ export {
   BenefitSection,
   ReviewSection,
   BookBanner,
+  AppDownloadSection,
   Footer
 }

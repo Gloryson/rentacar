@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { BookBanner, Footer, NavBar } from '@/components'
+import { AppDownloadSection, BookBanner, Footer, NavBar } from '@/components'
 import './globals.css'
 
 
@@ -19,6 +19,7 @@ export default function RootLayout({
         <NavBar />
         {children}
         <BookBanner />
+        <AppDownloadSection />
         <Footer />
       </body>
     </html>
