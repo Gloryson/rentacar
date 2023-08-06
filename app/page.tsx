@@ -1,4 +1,4 @@
-import { Banner, BenefitSection, BookSection, FeatureSection, MainSection } from '@/components';
+import { Banner, BenefitSection, BookSection, FeatureSection, MainSection, ReviewSection } from '@/components';
 import { Fragment } from 'react';
 
 
@@ -10,6 +10,7 @@ export default function Home () {
       <FeatureSection />
       <Banner />
       <BenefitSection />
+      <ReviewSection />
     </Fragment>
   )
 }

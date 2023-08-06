@@ -1,0 +1,59 @@
+.review__section {
+  background-color: var(--shadow-color-100);
+
+  p {
+    text-align: center;
+    max-width: 500px;
+  }
+}
+
+.reviews__container {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  gap: 30px;
+  padding-top: 50px;
+
+  @media (max-width: 1024px) {
+    grid-template: 1fr / 1fr;
+  }
+}
+
+.review {
+  display: grid;
+  place-content: space-between;
+  max-width: 500px;
+  min-height: 350px;
+  background-color: white;
+  box-shadow: 0 10px 15px 0 var(--shadow-color-200);
+  padding: 50px;
+
+  @media (max-width: 1024px) {
+    padding: 25px;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 1.4;
+  }
+
+  .reviewer {
+    display: grid;
+    place-content: center start;
+    height: 75px;
+    padding-left: 100px;
+    background-repeat: no-repeat;
+    background-position: left, right;
+  }
+
+  &:nth-child(1) .reviewer {
+    background-image: url(../../public/pictures/hanna-hotter.jpg), url(../../public/svg/quote-right.svg);
+    background-size: contain, 50px;
+  }
+
+  &:nth-child(2) .reviewer {
+    background-image: url(../../public/pictures/john-doe.jpg), url(../../public/svg/quote-right.svg);
+    background-size: contain, 50px;
+  }
+}
