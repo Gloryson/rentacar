@@ -1,0 +1,70 @@
+.benefit__section {
+  background: url(../../public/backgrounds/benefit-cars-background.jpg) no-repeat top;
+  background-size: clamp(0px, 80%, 1280px);
+  padding-top: clamp(0px, 25vw, 500px);
+
+  @media (max-width: 800px) {
+    background-size: 100%;
+  }
+
+  .container {
+    grid-template: 1fr / 1fr 1fr;
+
+    @media (max-width: 1024px) {
+      grid-template: 1fr / 1fr;
+      gap: 60px;
+    }
+
+    .benefit__content {
+      display: grid;
+      place-self: start end;
+      max-width: 500px;
+      gap: 15px;
+    
+      p {
+        padding-bottom: 25px;
+      }
+    
+      @media (max-width: 1024px) {
+        place-items: center;
+      }
+    }
+    
+    .benefit__features__container {
+      display: grid;
+      gap: 50px;
+    }
+    
+    .benefit__feature {
+      display: grid;
+      gap: 15px;
+      max-width: 425px;
+      padding-left: 115px;
+      
+      &:nth-child(1) {
+        background: url(../../public/backgrounds/benefit-country-drive-background.jpg) no-repeat left;
+        background-size: 100px;
+      }
+    
+      &:nth-child(2) {
+        background: url(../../public/backgrounds/benefit-all-inclusive-background.jpg) no-repeat left;
+        background-size: 100px;
+      }
+    
+      &:nth-child(3) {
+        background: url(../../public/backgrounds/benefit-no-hidden-charges-background.jpg) no-repeat left;
+        background-size: 100px;
+      }
+    
+      @media (max-width: 1024px) {
+        padding: 115px 0 0 0;
+    
+        &:nth-child(1n) {
+          background-position: top;
+        }
+      }
+    }
+
+  }
+
+}
