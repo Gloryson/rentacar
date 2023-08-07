@@ -10,14 +10,9 @@
   .container {
     place-items: start;
 
-    .breadcrumbs {
-      display: flex;
-      gap: 8px;
-
-      a {
-        font-size: 24px;
-        font-weight: 900;
-      }
+    a {
+      font-size: 24px;
+      font-weight: 900;
     }
   }
 }

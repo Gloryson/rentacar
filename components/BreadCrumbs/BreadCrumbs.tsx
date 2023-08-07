@@ -10,10 +10,7 @@ export function BreadCrumbs ( { page }: { page: string } ) {
       <Image fill priority src={`/backgrounds/breadcrumbs-background.jpg`} alt='' sizes='' style={{objectFit: 'cover'}} />
       <div className='container'>
         <h3>{page}</h3>
-        <div className='breadcrumbs'>
-          <Link href={'/'}>Home</Link>
-          <h4>/ {page}</h4>
-        </div>
+        <h4><Link href={'/'}>Home</Link> / {page}</h4>
       </div>
     </section>
   )
