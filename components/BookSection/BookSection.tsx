@@ -1,3 +1,4 @@
+import { cars } from '@/database/cars';
 import './BookSection.scss';
 
 
@@ -12,6 +13,9 @@ export function BookSection () {
             <label>Select car <b>*</b></label>
             <select>
               <option>Select car</option>
+              {
+                cars.map(car => <option>{`${car.mark} ${car.model}`}</option>)
+              }
             </select>
           </div>
           <div className='form__item'>
@@ -23,6 +27,7 @@ export function BookSection () {
               <option>Berlin</option>
               <option>Warsaw</option>
               <option>Copenhagen</option>
+              <option>New York</option>
             </select>
           </div>
           <div className='form__item'>
@@ -34,6 +39,7 @@ export function BookSection () {
               <option>Berlin</option>
               <option>Warsaw</option>
               <option>Copenhagen</option>
+              <option>New York</option>
             </select>
           </div>
           <div className='form__item'>
