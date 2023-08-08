@@ -4,6 +4,7 @@ import { BenefitSection } from './BenefitSection/BenefitSection';
 import { BookBanner } from './BookBanner/BookBanner';
 import { BookSection } from './BookSection/BookSection';
 import { BreadCrumbs } from './BreadCrumbs/BreadCrumbs';
+import { ContactSection } from './ContactSection/ContactSection';
 import { FeatureSection } from './FeatureSection/FeatureSection';
 import { Footer } from './Footer/Footer';
 import { MainSection } from './MainSection/MainSection';
@@ -28,5 +29,6 @@ export {
   BookBanner,
   AppDownloadSection,
   Footer,
-  OurTeamSection
+  OurTeamSection,
+  ContactSection
 }

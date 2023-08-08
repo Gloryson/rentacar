@@ -1,0 +1,87 @@
+.contact__section {
+
+  .container {
+    grid-template: 1fr / 1fr 1fr;
+    place-items: start center;
+
+    @media (max-width: 1024px) {
+      grid-template: none;
+      gap: 100px;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+      width: 100%;
+
+      @media (max-width: 1024px) {
+        max-width: 500px;
+      }
+  
+      .form__item {
+        display: grid;
+        gap: 10px;
+  
+        label b {
+          color: var(--danger-color);
+        }
+
+        textarea {
+          height: auto;
+          padding: 15px;
+        }
+  
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.contact__content {
+  display: grid;
+  gap: 15px;
+  max-width: 500px;
+
+  @media (max-width: 1024px) {
+    place-items: center;
+  }
+
+  p {
+    padding: 15px 0;
+  }
+
+  .phone, .email, .map {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    filter: brightness(30%);
+
+    &:hover {
+      filter: brightness(100%);
+    }
+
+    &::before {
+      content: '';
+      width: 20px;
+      height: 20px;    
+    }
+  }
+
+  .phone::before {
+    background: url(../../public/svg/phone.svg) no-repeat center center;
+    background-size: 100%;
+    scale: -1 1;
+  }
+
+  .email::before {
+    background: url(../../public/svg/envelope.svg) no-repeat center center;
+    background-size: 100%;
+  }
+
+  .map::before {
+    background: url(../../public/svg/marker.svg) no-repeat center center;
+    background-size: 100%;
+  }
+}
