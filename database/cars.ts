@@ -67,7 +67,7 @@ export const cars: Car[] = [
     mark: 'Mini',
     model: 'Cooper',
     year: 2010,
-    doors: '4/5',
+    doors: '2/3',
     ac: 'Yes',
     transmission: 'Manual',
     fuel: 'Gasoline',
