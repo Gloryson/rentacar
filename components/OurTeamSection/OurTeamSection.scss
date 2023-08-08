@@ -1,0 +1,25 @@
+.our__team__section {
+
+  .container {
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 30px;
+    max-width: 960px;
+
+    @media (max-width: 1024px) {
+      grid-template: none;
+    }
+
+    .employee__card {
+      display: grid;
+      place-items: center;
+      place-content: end center;
+      padding-bottom: 30px;
+      box-shadow: 0 10px 15px 0 var(--shadow-color-200);
+
+      h4 {
+        padding-top: 30px;
+      }
+    }
+  }
+
+}

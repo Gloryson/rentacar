@@ -22,7 +22,7 @@ export function NavBar () {
           <Link href={'/'} onClick={() => setIsVisible(false)}>About</Link>
           <Link href={'/'} onClick={() => setIsVisible(false)}>Car Models</Link>
           <Link href={'/reviews'} onClick={() => setIsVisible(false)}>Reviews</Link>
-          <Link href={'/'} onClick={() => setIsVisible(false)}>Our Team</Link>
+          <Link href={'/our-team'} onClick={() => setIsVisible(false)}>Our Team</Link>
           <Link href={'/'} onClick={() => setIsVisible(false)}>Contact</Link>
         </div>
 
