@@ -19,7 +19,7 @@ export function NavBar () {
 
         <div className={`nav-links__container  ${isVisible ? 'visible' : ''}`}>
           <Link href={'/'} onClick={() => setIsVisible(false)}>Home</Link>
-          <Link href={'/'} onClick={() => setIsVisible(false)}>About</Link>
+          <Link href={'/about'} onClick={() => setIsVisible(false)}>About</Link>
           <Link href={'/'} onClick={() => setIsVisible(false)}>Car Models</Link>
           <Link href={'/reviews'} onClick={() => setIsVisible(false)}>Reviews</Link>
           <Link href={'/our-team'} onClick={() => setIsVisible(false)}>Our Team</Link>

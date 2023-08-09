@@ -1,3 +1,4 @@
+import { AboutCompanySection } from './AboutCompanySection/AboutCompanySection';
 import { AppDownloadSection } from './AppDownloadSection/AppDownloadSection';
 import { Banner } from './Banner/Banner';
 import { BenefitSection } from './BenefitSection/BenefitSection';
@@ -30,5 +31,6 @@ export {
   AppDownloadSection,
   Footer,
   OurTeamSection,
-  ContactSection
+  ContactSection,
+  AboutCompanySection
 }

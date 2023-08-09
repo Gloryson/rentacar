@@ -1,0 +1,28 @@
+.about__company__section {
+
+  .container {
+    grid-template: 1fr / 1fr 1fr;
+    gap: 50px;
+
+    @media (max-width: 1024px) {
+      grid-template: none;
+    }
+
+    .about__image {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      position: relative;
+      box-shadow: 0 10px 15px 0 var(--shadow-color-200);
+    }
+
+    .about__content {
+      display: grid;
+      place-self: start;
+      gap: 15px;
+
+      p {
+        padding: 25px 0;
+      }
+    }
+  }
+}
