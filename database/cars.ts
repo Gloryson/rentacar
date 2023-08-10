@@ -85,5 +85,17 @@ export const cars: Car[] = [
     fuel: 'Gasoline',
     price: 85,
     img: 'renault-clio',
+  },
+  {
+    id: 'idChryslerPacifica20184/5YesAuto',
+    mark: 'Chrysler',
+    model: 'Pacifica',
+    year: 2018,
+    doors: '4/5',
+    ac: 'Yes',
+    transmission: 'Auto',
+    fuel: 'Hybrid',
+    price: 105,
+    img: 'chrysler-pacifica',
   }
 ]
