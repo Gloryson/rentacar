@@ -1,0 +1,21 @@
+.scroll__to__top__button {
+  color: var(--brand-color);
+  font-size: 50px;
+  font-weight: 900;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(110%);
+  }
+
+  &:active {
+    filter: brightness(100%);
+  }
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}

@@ -13,6 +13,7 @@ import { NavBar } from './NavBar/NavBar';
 import { OurTeamSection } from './OurTeamSection/OurTeamSection';
 import { RentalFleetSection } from './RentalFleetSection/RentalFleetSection';
 import { ReviewSection } from './ReviewSection/ReviewSection';
+import { ScrollToTopButton } from './ScrollToTopButton/ScrollToTopButton';
 
 
 
@@ -32,5 +33,6 @@ export {
   Footer,
   OurTeamSection,
   ContactSection,
-  AboutCompanySection
+  AboutCompanySection,
+  ScrollToTopButton
 }

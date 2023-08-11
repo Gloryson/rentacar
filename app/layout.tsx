@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { AppDownloadSection, BookBanner, Footer, NavBar } from '@/components'
+import { AppDownloadSection, BookBanner, Footer, NavBar, ScrollToTopButton } from '@/components'
 import './globals.css'
 
 
@@ -20,6 +20,7 @@ export default function RootLayout({
         {children}
         <BookBanner />
         <AppDownloadSection />
+        <ScrollToTopButton />
         <Footer />
       </body>
     </html>
