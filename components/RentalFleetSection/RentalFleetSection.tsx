@@ -11,6 +11,8 @@ import './RentalFleetSection.scss';
 export function RentalFleetSection () {
 
   const [car, setCar] = useState<Car>(cars[0]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
 
   return(
     <section className='rental__fleet__section'>
@@ -26,7 +28,7 @@ export function RentalFleetSection () {
                   <button
                     key={curr.id}
                     className={curr.id === car.id ? 'selected' : ''}
-                    onClick={() => setCar(curr)}
+                    onClick={() => {setCar(curr); setIsLoading(true)}}
                   >
                     {`${curr.mark} ${curr.model}`}
                   </button>
@@ -35,7 +37,16 @@ export function RentalFleetSection () {
             }
           </div>
           <div className='image__container'>
-            <Image fill src={`/pictures/${car.img}.jpg`} alt='' sizes='100%' priority={false}/>
+            <div className='spiner' style={{opacity: isLoading ? 1 : 0}}></div>
+            <Image 
+              fill
+              priority
+              src={`/pictures/${car.img}.jpg`}
+              alt=''
+              sizes='100%'
+              onLoadingComplete={() => setIsLoading(false)}
+              style={{ opacity: isLoading ? 0 : 1 }}
+            />
           </div>
           <div className='properties__container'>
             <div className='price'>{`$${car.price}`} / rent per day</div>

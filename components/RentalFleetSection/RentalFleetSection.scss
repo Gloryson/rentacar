@@ -57,6 +57,7 @@
 }
 
 .image__container {
+  display: grid;
   aspect-ratio: 4 / 3;
   position: relative;
 }
@@ -96,5 +97,22 @@
   button {
     width: 220px;
     border-radius: 0;
+  }
+}
+
+
+
+.spiner {
+  place-self: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 7px solid;
+  border-color: var(--brand-color) transparent var(--brand-color) transparent;
+  animation: spiner 1s linear infinite; 
+
+  @keyframes spiner {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
   }
 }
