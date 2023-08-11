@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { cars } from '@/database/cars';
 import { Car } from '@/types/interfaces';
+import { useRouter } from 'next/navigation';
 import './RentalFleetSection.scss';
 
 
@@ -12,10 +13,11 @@ export function RentalFleetSection () {
 
   const [car, setCar] = useState<Car>(cars[0]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const router = useRouter();
 
 
   return(
-    <section className='rental__fleet__section'>
+    <section id='rental__fleet__section'>
       <div className='container'>
         <h4>Vehicle Models</h4>
         <h2>Our rental fleet</h2>
@@ -28,7 +30,12 @@ export function RentalFleetSection () {
                   <button
                     key={curr.id}
                     className={curr.id === car.id ? 'selected' : ''}
-                    onClick={() => {setCar(curr); setIsLoading(true)}}
+                    onClick={() => {
+                      if (car.id !== curr.id) {
+                        setCar(curr);
+                        setIsLoading(true);
+                      }
+                    }}
                   >
                     {`${curr.mark} ${curr.model}`}
                   </button>
@@ -66,7 +73,7 @@ export function RentalFleetSection () {
               <div>Fuel</div>
               <div>{car.fuel}</div>
             </div>
-            <button>RESERVE NOW</button>
+            <button onClick={() => router.push('/#book__section')}>RESERVE NOW</button>
           </div>
         </div>
       </div>

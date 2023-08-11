@@ -24,6 +24,7 @@
   color: var(--text-color);
   border: none;
   outline: none;
+  scroll-behavior: smooth;
   scrollbar-width: thin;
 }
 
