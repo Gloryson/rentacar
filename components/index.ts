@@ -10,6 +10,7 @@ import { FeatureSection } from './FeatureSection/FeatureSection';
 import { Footer } from './Footer/Footer';
 import { MainSection } from './MainSection/MainSection';
 import { NavBar } from './NavBar/NavBar';
+import { OrderSection } from './OrderSection/OrderSection';
 import { OurTeamSection } from './OurTeamSection/OurTeamSection';
 import { RentalFleetSection } from './RentalFleetSection/RentalFleetSection';
 import { ReviewSection } from './ReviewSection/ReviewSection';
@@ -34,5 +35,6 @@ export {
   OurTeamSection,
   ContactSection,
   AboutCompanySection,
-  ScrollToTopButton
+  ScrollToTopButton,
+  OrderSection
 }

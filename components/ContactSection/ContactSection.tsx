@@ -16,20 +16,20 @@ export function ContactSection () {
         </div>
         <form>
           <div className='form__item'>
-              <label>Full name <b>*</b></label>
-              <input type='name' placeholder='John Doe'></input>
-            </div>
-            <div className='form__item'>
-              <label>Email <b>*</b></label>
-              <input type='email' placeholder='example@exam.ple'></input>
-            </div>
-            <div className='form__item'>
-              <label>Tell us about it <b>*</b></label>
-              <textarea rows={10} placeholder='Write here...'></textarea>
-            </div>
-            <div className='form__item'>
-              <button>Send Message</button>
-            </div>
+            <label>Full name <b>*</b></label>
+            <input type='name' placeholder='John Doe'></input>
+          </div>
+          <div className='form__item'>
+            <label>Email <b>*</b></label>
+            <input type='email' placeholder='example@exam.ple'></input>
+          </div>
+          <div className='form__item'>
+            <label>Tell us about it <b>*</b></label>
+            <textarea rows={10} placeholder='Write here...'></textarea>
+          </div>
+          <div className='form__item'>
+            <button>Send Message</button>
+          </div>
         </form>
       </div>
     </section>

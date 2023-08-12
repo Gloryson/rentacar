@@ -16,11 +16,11 @@ export function Footer () {
         </div>
         <div className='content__container'>
           <h4>COMPANY</h4>
-          <Link href={'/'}>New York</Link>
-          <Link href={'/'}>Careers</Link>
-          <Link href={'/'}>Mobile</Link>
-          <Link href={'/'}>Blog</Link>
-          <Link href={'/'}>How we work</Link>
+          <Link href={'/book'}>New York</Link>
+          <Link href={'/book'}>Careers</Link>
+          <Link href={'/book'}>Mobile</Link>
+          <Link href={'/book'}>Blog</Link>
+          <Link href={'/book'}>How we work</Link>
         </div>
         <div className='content__container'>
           <h4>WORKING HOURS</h4>
