@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link';
-import NextLink from 'next/link';
 import { useState } from 'react';
 import './NavBar.scss';
 
@@ -19,7 +18,7 @@ export function NavBar () {
         <div className='logo'></div>
 
         <div className={`nav-links__container  ${isVisible ? 'visible' : ''}`}>
-          <NextLink href={'/'} onClick={() => setIsVisible(false)}>Home</NextLink>
+          <Link href={'/'} onClick={() => setIsVisible(false)}>Home</Link>
           <Link href={'/about'} onClick={() => setIsVisible(false)}>About</Link>
           <Link href={'/car-models'} onClick={() => setIsVisible(false)}>Car Models</Link>
           <Link href={'/reviews'} onClick={() => setIsVisible(false)}>Reviews</Link>
@@ -28,7 +27,7 @@ export function NavBar () {
         </div>
 
         <div className='auth__container'>
-          <NextLink href={'/'}>Sign In</NextLink>
+          <Link href={'/'}>Sign In</Link>
           <button>Register</button>
         </div>
 
