@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link';
 import './ContactSection.scss';
 
@@ -14,7 +16,7 @@ export function ContactSection () {
           <Link href='mailto:rentacar@rentacar.com' className='email'>rentacar@rentacar.com</Link>
           <Link href='https://goo.gl/maps/tyMTPKcd4fDZ3yKQ9' className='map' target='blank'>Warsaw, Poland</Link>
         </div>
-        <form>
+        <form onSubmit={e => e.preventDefault()}>
           <div className='form__item'>
             <label>Full name <b>*</b></label>
             <input type='name' placeholder='John Doe'></input>

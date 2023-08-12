@@ -3,16 +3,18 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { cars } from '@/database/cars';
-import { Car } from '@/types/interfaces';
 import { useRouter } from 'next/navigation';
+import { useAppDispatch, useAppSelector } from '@/store/store';
+import { setCar } from '@/store/choiceSlice';
 import './RentalFleetSection.scss';
 
 
 
 export function RentalFleetSection () {
 
-  const [car, setCar] = useState<Car>(cars[0]);
+  const { car } = useAppSelector(state => state.choice);
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const dispatch = useAppDispatch();
   const router = useRouter();
 
 
@@ -32,7 +34,7 @@ export function RentalFleetSection () {
                     className={curr.id === car.id ? 'selected' : ''}
                     onClick={() => {
                       if (car.id !== curr.id) {
-                        setCar(curr);
+                        dispatch(setCar(curr));
                         setIsLoading(true);
                       }
                     }}

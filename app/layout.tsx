@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { AppDownloadSection, BookBanner, Footer, NavBar, ScrollToTopButton } from '@/components'
+import { AppDownloadSection, BookBanner, Footer, NavBar, Providers, ScrollToTopButton } from '@/components'
 import './globals.css'
 
 
@@ -16,12 +16,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <NavBar />
-        {children}
-        <BookBanner />
-        <AppDownloadSection />
-        <ScrollToTopButton />
-        <Footer />
+        <Providers>
+          <NavBar />
+          {children}
+          <BookBanner />
+          <AppDownloadSection />
+          <ScrollToTopButton />
+          <Footer />
+        </Providers>
       </body>
     </html>
   )

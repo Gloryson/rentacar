@@ -3,11 +3,13 @@
 import Image from 'next/image';
 import { BookSection } from '@/components';
 import { useState } from 'react';
+import { useAppSelector } from '@/store/store';
 import './OrderSection.scss';
 
 
 export function OrderSection () {
 
+  const { car } = useAppSelector(state => state.choice);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   
@@ -22,7 +24,7 @@ export function OrderSection () {
           <Image 
             fill
             priority
-            src={`/pictures/ford-mustang.jpg`}
+            src={`/pictures/${car.img}.jpg`}
             alt=''
             sizes='100%'
             onLoadingComplete={() => setIsLoading(false)}

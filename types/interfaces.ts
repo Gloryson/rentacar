@@ -22,3 +22,12 @@ export interface Employee {
   position: string;
   img: string;
 }
+
+
+export interface Choice {
+  car: Car;
+  pickCity: string;
+  dropCity: string;
+  pickDate: string;
+  dropDate: string;
+}
