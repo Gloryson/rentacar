@@ -19,7 +19,6 @@ export function BookSection () {
           <div className='form__item'>
             <label>Select car <b>*</b></label>
             <select>
-              <option>Select car</option>
               {
                 cars.map(car => <option>{`${car.mark} ${car.model}`}</option>)
               }
@@ -28,7 +27,6 @@ export function BookSection () {
           <div className='form__item'>
             <label>Pick-up <b>*</b></label>
             <select>
-              <option>Select pick-up location</option>
               <option>London</option>
               <option>Paris</option>
               <option>Berlin</option>
@@ -40,7 +38,6 @@ export function BookSection () {
           <div className='form__item'>
             <label>Drop-off <b>*</b></label>
             <select>
-              <option>Select drop-off location</option>
               <option>London</option>
               <option>Paris</option>
               <option>Berlin</option>

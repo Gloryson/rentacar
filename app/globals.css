@@ -160,6 +160,10 @@ select, input, textarea {
   color: var(--shadow-color-400);
 }
 
+::placeholder {
+  color: var(--shadow-color-300);
+}
+
 
 
 
