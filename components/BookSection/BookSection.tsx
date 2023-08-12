@@ -1,14 +1,21 @@
+'use client'
+
 import { cars } from '@/database/cars';
+import { useRouter } from 'next/navigation';
 import './BookSection.scss';
 
 
 
 export function BookSection () {
+
+  const router = useRouter();
+
+
   return(
     <section className='book__section'>
       <div className='container'>
         <h4>Book a car</h4>
-        <form>
+        <form onSubmit={e => e.preventDefault()}>
           <div className='form__item'>
             <label>Select car <b>*</b></label>
             <select>
@@ -51,7 +58,7 @@ export function BookSection () {
             <input type='date'></input>
           </div>
           <div className='form__item'>
-            <button>Search</button>
+            <button onClick={(e) => router.push('/book')}>Search</button>
           </div>
         </form>
       </div>
