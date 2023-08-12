@@ -5,7 +5,7 @@ import './BookSection.scss';
 
 export function BookSection () {
   return(
-    <section id='book__section'>
+    <section className='book__section'>
       <div className='container'>
         <h4>Book a car</h4>
         <form>

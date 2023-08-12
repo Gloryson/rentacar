@@ -24,7 +24,7 @@ export function ScrollToTopButton () {
       className='scroll__to__top__button'
       onClick={() => scrollTo(0, 0)}
     >
-      &#9650;
+      {}
     </div>
   ) : (
     <></>

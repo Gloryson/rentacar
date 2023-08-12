@@ -1,7 +1,8 @@
 .scroll__to__top__button {
-  color: var(--brand-color);
-  font-size: 50px;
-  font-weight: 900;
+  width: 50px;
+  height: 50px;
+  background: url(../../public/svg/scroll-to-top.svg) no-repeat center;
+  background-size: 100%;
   position: fixed;
   bottom: 25px;
   right: 25px;

@@ -17,7 +17,7 @@ export function RentalFleetSection () {
 
 
   return(
-    <section id='rental__fleet__section'>
+    <section className='rental__fleet__section'>
       <div className='container'>
         <h4>Vehicle Models</h4>
         <h2>Our rental fleet</h2>
@@ -73,7 +73,7 @@ export function RentalFleetSection () {
               <div>Fuel</div>
               <div>{car.fuel}</div>
             </div>
-            <button onClick={() => router.push('/#book__section')}>RESERVE NOW</button>
+            <button onClick={() => router.push('/book')}>RESERVE NOW</button>
           </div>
         </div>
       </div>
