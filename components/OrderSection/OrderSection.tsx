@@ -24,7 +24,7 @@ export function OrderSection () {
           <Image 
             fill
             priority
-            src={`/pictures/${car.img}.jpg`}
+            src={`pictures/${car.img}.jpg`}
             alt=''
             sizes='100%'
             onLoadingComplete={() => setIsLoading(false)}

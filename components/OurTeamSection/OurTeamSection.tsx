@@ -16,7 +16,7 @@ export function OurTeamSection () {
             team.map(employee => {
               return(
                 <div key={employee.id} className='employee__card'>
-                  <Image width={300} height={400} alt='' src={`/pictures/${employee.img}.jpg`}/>
+                  <Image width={300} height={400} alt='' src={`pictures/${employee.img}.jpg`}/>
                   <h4>{`${employee.firstName} ${employee.lastName}`}</h4>
                   <p>{employee.position}</p>
                 </div>

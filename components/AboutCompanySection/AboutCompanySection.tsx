@@ -8,7 +8,7 @@ export function AboutCompanySection () {
     <section className='about__company__section'>
       <div className='container'>
         <div className='about__image'>
-          <Image fill priority src={'/backgrounds/about-background.jpg'} alt='' sizes='' />
+          <Image fill priority src={'backgrounds/about-background.jpg'} alt='' sizes='' />
         </div>
         <div className='about__content'>
           <h4>About Company</h4>
