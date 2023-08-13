@@ -1,17 +1,16 @@
-import { Banner, BenefitSection, BookSection, FeatureSection, MainSection, RentalFleetSection, ReviewSection } from '@/components';
-import { Fragment } from 'react';
+'use client'
+
+import { useRouter } from 'next/navigation'
+import { useEffect } from 'react';
 
 
-export default function Home () {
-  return (
-    <Fragment>
-      <MainSection />
-      <BookSection />
-      <FeatureSection />
-      <RentalFleetSection />
-      <Banner />
-      <BenefitSection />
-      <ReviewSection />
-    </Fragment>
-  )
+export default function App () {
+
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push('/home');
+  }, [])
+
+  return null;
 }
