@@ -12,5 +12,11 @@ export default function App () {
     router.push('/home');
   }, [])
 
-  return null;
+  return(
+    <section className='empty__screen'>
+      <div className='container' style={{ height: '100vh' }}>
+        <div className='spiner'></div>
+      </div>
+    </section>
+  )
 }
