@@ -4,7 +4,7 @@
 This project is an online platform that allows users to rent cars for personal or business use. The website provides an easy to use interface for searching, comparing, and reserving cars from a wide selection of vehicles that vary in make, model, size, and price.
 </br>
 </br>
-Live Demo: [RENT A CAR](https://gloryson.github.io/rentacar/ "Click here to follow the link.")
+Live Demo: [**RENT A CAR**](https://gloryson.github.io/rentacar/ "Click here to follow the link.")
 </br>
 </br>
 ### Build with:
