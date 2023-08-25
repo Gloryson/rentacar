@@ -14,4 +14,4 @@ Live Demo: [**RENT A CAR**](https://gloryson.github.io/rentacar/ "Click here to 
 </br>
 </br>
 ## Project screenshot
-![rentacar](https://github.com/Gloryson/rentacar/assets/92429825/46f7a2da-122d-4dcc-91ee-97da1953f1a6)
+![project-rentacar](https://github.com/Gloryson/rentacar/assets/92429825/be591d74-8e0e-4d21-b543-ccc3a73a610a)
